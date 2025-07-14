@@ -1,17 +1,98 @@
-It's a simple Python GUI game with snakes, water, and guns, similar to traditional rock-paper-scissors games. Built using Python and a GUI framework, it provides a fun and interactive way to play this classic game with the computer. 
+# 🐍 Snake Water Gun Game
 
-=>Features:-
--User-friendly interface: The GUI is easy to use. Makes it easy to play.
--Random Computer Selection: Computer selection is random for fair play.
--Score Tracking: Track player and teammate scores.
--Replay Option: Allows users to play multiple rounds without restarting the game.
+A modern take on the classic Snake-Water-Gun game (like Rock-Paper-Scissors, but more fun). Built with Python and Tkinter, this desktop game features a responsive UI, real-time score tracking, animated buttons, and persistent history.
 
-=>Rules:-
--Snake bites water but gets shot by gun.
--The water sinks the gun but was swallowed by a snake.
-=The gun shoots the snake but it sinks into the water.
+---
 
-=>Requirements:-
--Python 3.x
--Tkinter
--PILLOW
+## 🚀 Features
+
+* 🖼️ **Modern Tkinter UI** — Clean layout, theming, and button animations
+* 📈 **Score Tracking** — Tracks your current and top scores
+* 💾 **Persistent Data** — Saves top score and game history in JSON/CSV
+* 📜 **Game History** — View scrollable history of previous rounds
+* 🔁 **Reset Options** — Reset score and clear history
+* 🧠 **Game Logic** — Snake drinks Water, Water ruins Gun, Gun kills Snake
+* 🛡️ **Crash-Proof** — Handles missing files and bad inputs like a pro
+
+---
+
+## 📁 Directory Structure
+
+```
+snake-water-gun/
+├── main.py
+├── assets/
+│   ├── snake.png
+│   ├── water.png
+│   ├── gun.png
+│   └── help.png
+├── data/
+│   ├── top_score.json
+│   └── history.csv
+├── src/
+│   ├── ui.py
+│   ├── utils.py
+│   ├── constants.py
+│   └── game_logic.py
+└── README.md
+```
+
+---
+
+## 🧠 Rules
+
+* 🐍 Snake drinks 💧 Water → Snake wins
+* 💧 Water ruins 🔫 Gun → Water wins
+* 🔫 Gun kills 🐍 Snake → Gun wins
+
+Same choices? It's a **tie**.
+
+---
+
+## ▶️ How to Run
+
+```bash
+# Make sure you have required packages
+pip install pillow
+
+# Run the game
+python main.py
+```
+
+---
+
+## 🔧 Tech Stack
+
+* **Python 3.x**
+* **Tkinter** — UI toolkit
+* **Pillow** — For image handling
+
+---
+
+## 📌 To-Do (Open for Contributions)
+
+* 🎯 Add sound effects
+* 🌐 Add multiplayer or online mode
+* 🏅 Achievements / badges system
+* 📊 Stats dashboard
+* 🌈 Dark/light mode toggle
+
+---
+
+## 🤝 Contributing
+
+1. Fork this repo
+2. Make your changes in a new branch
+3. Push and open a pull request
+
+---
+
+## 📜 License
+
+MIT License. Do whatever, just don’t sue me when Snake beats Gun and you lose your high score.
+
+---
+
+## 👀 Screenshot
+
+![Game Screenshot](./assets/screenshot.png)
