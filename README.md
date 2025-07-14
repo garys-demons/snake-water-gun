@@ -27,7 +27,7 @@ snake-water-gun/
 │   ├── gun.png
 │   └── help.png
 ├── data/
-│   ├── top_score.json
+│   ├── score.json
 │   └── history.csv
 ├── src/
 │   ├── ui.py
